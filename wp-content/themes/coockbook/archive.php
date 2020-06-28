@@ -9,7 +9,7 @@
     </div>
     <a href="<?php echo get_term_link('vegan', 'type'); ?>"><button type="submit" class="btn btn-success">Vegan</button></a>
     <a href="<?php echo get_term_link('vegetarian', 'type'); ?>"><button type="submit" class="btn btn-success">Vegetarian</button></a>
-    <a href="http://wordpress.test/recipes/"><button type="submit" class="btn btn-primary">All Recepies</button></a>
+    <a href="http://wordpress.test/recipes/"><button type="submit" class="btn btn-warning">All Recepies</button></a>
 
     <hr>
     <div class="row">
