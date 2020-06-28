@@ -17,7 +17,6 @@
     <div class="col-md-4">
       <!-- Search Widget -->
 
-
       <?php
       dynamic_sidebar("sidebar-search");
       ?>

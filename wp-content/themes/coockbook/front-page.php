@@ -46,7 +46,7 @@
 <div class="container">
   <?php
   // the query
-  $latest_recipes = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => 8, 'cat' => '8')); ?>
+  $latest_recipes = new WP_Query(array('post_type' => 'recipes', 'post_status' => 'publish', 'posts_per_page' => 8)); ?>
   <h1 class="my-4 text-center"><a class="text-warning" href="#">Latest Recipes</a></h1>
   <div class="row">
     <?php if ($latest_recipes->have_posts()) : ?>
@@ -69,7 +69,7 @@
       <?php wp_reset_postdata(); ?>
 
     <?php else : ?>
-      <p><?php _e('Sorry, no recipes matched your criteria.'); ?></p>
+      <p><?php _e('Sorry, no recipes at this time.'); ?></p>
     <?php endif; ?>
   </div>
   <!-- /.row -->
@@ -98,7 +98,7 @@
   <div class="row">
     <?php
     // the query
-    $latest_blogs = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => 3, 'cat' => '7')); ?>
+    $latest_blogs = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => 3)); ?>
     <?php if ($latest_blogs->have_posts()) : ?>
       <!-- the loop -->
       <?php while ($latest_blogs->have_posts()) : $latest_blogs->the_post(); ?>
@@ -116,7 +116,7 @@
       <?php wp_reset_postdata(); ?>
 
     <?php else : ?>
-      <p><?php _e('Sorry, no blogs matched your criteria.'); ?></p>
+      <p><?php _e('Sorry, no blogs at this time.'); ?></p>
     <?php endif; ?>
   </div>
 </div>
